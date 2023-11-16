@@ -18,5 +18,12 @@ def note():
     return render_template('Note.html',Nota = Nota)
 
 
+@app.route('/moda')
+def moda():
+    Editar = 'Editar'
+    return render_template('moda.html',Editar = Editar)
+
+
+
 if __name__ == '__main__':
     app.run()
