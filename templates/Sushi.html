@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/Style.css">
+    <title>Sushitzu</title>
+</head>
+
+<body>
+    <header class="header">
+        <picture>
+            <img src="static/Img/pngtree-sushi-logo-png-image_6552022-removebg-preview (1).png" alt="">
+        </picture>
+        <nav>
+            <a id="div5" href="">Sobre nós</a>
+            <a id="div6" href="">Cardápio</a>
+            <a id="div7" href="">Delivery</a>
+        </nav>
+        <div class="divi">
+            <i id="ip" class="fa-regular fa-circle-user ip"></i>
+            <p class="pi">Minha Conta</p>
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <div class="top">
+                {% for barcas in lista %}
+                <div id="div1">
+                    <img src="../static/Img/image 4.png" alt="">
+                    <p>{{barcas}}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="bottom">
+                <div class="be">
+                    <div>
+                        <i class="fa-solid fa-landmark"></i>
+                        <h1><span></span> Sobre a Loja</h1>
+                    </div>
+                    <p> <span class="s">Sushitzu</span> , a icônica loja de sushi, foi fundada em 1994 por um apaixonado
+                        por culinária japonesa chamado <span class="s">Hiroshi Takahashi. <br></span>
+                        Desde então, a loja tem sido um destino popular para os amantes de sushi em todo o mundo. <br>
+                        Com uma decoração minimalista e elegante, a <span class="s">Sushitzu </span> é conhecida por sua
+                        comida de alta qualidade e atendimento impecável. <br>
+                        A equipe é treinada para preparar os mais frescos e saborosos pratos de sushi, utilizando apenas
+                        os ingredientes mais finos e de origem sustentável.</p>
+                </div>
+                <div class="bd">
+                    <div>
+                        <i class="fa-solid fa-store"></i>
+                        <h2>Ambiente</h2>
+                    </div>
+                    <p>Os clientes da <span class="s">Sushitzu</span> frequentemente elogiam o ambiente tranquilo e
+                        sofisticado da loja, bem como a qualidade excepcional da comida e do serviço. Os preços podem
+                        ser um pouco elevados, mas a qualidade dos pratos e a experiência geral valem a pena.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="cima">
+            <h3>Entre Em Contato Conosco:</h3>
+        </div>
+        <div class="baixo">
+            <div>
+                <img src="static/icons8-instagram-48.png" alt="">
+                Instagram
+            </div>
+            <div>
+                <img src="static/icons8-facebook-48.png" alt="">
+                Facebook
+            </div>
+            <div>
+                <img src="static/Img/icons8-whatsapp-48 (1).png" alt="">
+                Whatsapp
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script src="../Script/script.js"></script>
+<script src="https://kit.fontawesome.com/7f62cd2861.js" crossorigin="anonymous"></script>
+
+</html>
