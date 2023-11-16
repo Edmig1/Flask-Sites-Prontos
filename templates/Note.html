@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="static/note.css">
+	<link rel="stylesheet" type="text/css" href="assets/style/responsive.css">
+	<script defer src="assets/script/script.js"></script>
+	<script src="https://kit.fontawesome.com/9879f90344.js" crossorigin="anonymous"></script>
+	<title>E-Note | Inicio</title>
+</head>
+<body>
+	<header>
+		<div>
+			<figure id="logo">
+				<img src="static/Img/logoenote.png" alt="Logo Escrita E-Note, que é constituída por um bloco de notas amarelo e a palavra note sublinhada com uma linha em textura de giz">
+			</figure>
+		</div>
+		<div class="divnew">
+			<button id="new" class="btn1" onclick="abrir()">{{ Nota }}</button>
+		</div>
+		<div class="divlupa">
+			<input type="text" name="note-search" id="pesquisa" class="formInput" placeholder="Pesquise suas notas" style="display:none;">
+			<button id="lupa"><i class="fa-solid fa-magnifying-glass" onclick="show()"></i></button>
+		</div>
+		<div id="escuro" style="display: none;"></div>
+		<div id="criar" style="top: -100%;">
+			<button class="close" onclick="fechar(this)"><i class="fa-solid fa-xmark"></i></button>
+			<h2>Criar anotação</h2>
+			<form id="criarform">
+				<div>
+					<label for="titulo">Título</label>
+					<input type="text" name="titulo" required autocomplete="off" placeholder="Título da anotação" class="formInput" maxlength="36">	
+				</div>
+				<div>
+					<label for="conteudo">Conteúdo</label>
+					<textarea name="conteudo" id="conteudo" cols="70" rows="5" placeholder="Conteudo da anotação (opcional)" maxlength="100"></textarea>
+				</div>
+				<div class="prazodiv">
+					<div>
+						<input type="checkbox" name="prazocheck" id="prazocheck" onclick="habilitar(this)">
+						<label for="prazocheck">Habilitar prazo</label>
+					</div>
+					<div>
+						<input type="date" name="prazo" id="prazo" disabled>
+					</div>
+				</div>
+				<div>
+					<input type="submit" value="Criar anotação" id="confirm" class="btn1">
+				</div>
+			</form>
+		</div>
+	</header>
+	<main>
+		<section class="btn">
+			<a class="btn1" href="index.html">No Prazo</a>
+			<a class="btn2" href="concluidas.html">Concluídas</a>
+			<a class="btn2" href="">Atrasadas</a>
+		</section>
+		<section class="prazo" id="secPrazo">
+
+		</section>
+		<!-- <section>
+			<div>
+				<div class="divtitulo">
+					<h4>Título</h4>
+				</div>
+				<div>
+					
+				</div>
+			</div>
+		</section>
+		<section>
+			<div>
+				<div class="divtitulo">
+					<h4>Título</h4>
+				</div>
+				<div>
+					
+				</div>
+			</div>
+		</section> -->
+	</main>
+	<footer>
+		
+	</footer>
+</body>
+</html>

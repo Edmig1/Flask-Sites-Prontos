@@ -12,6 +12,11 @@ def sushi():  # put application's code here
     lista = [barca1, barca2, barca3, barca4]
     return render_template('Sushi.html', lista=lista)
 
+@app.route('/note')
+def note():
+    Nota = 'Nova Anotação'
+    return render_template('Note.html',Nota = Nota)
+
 
 if __name__ == '__main__':
     app.run()
